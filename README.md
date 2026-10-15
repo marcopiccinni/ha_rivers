@@ -98,13 +98,6 @@ Per ogni stazione (voce di configurazione → **Configura**):
 I valori di default ricalcano la configurazione di riferimento. Diminuisci gli
 intervalli con moderazione: i servizi sono pubblici e gratuiti.
 
-## Migrazione dal vecchio script
-
-Se usavi uno script esterno che faceva push via REST (`sensor.river_station_*`),
-**disattivalo** dopo aver aggiunto le stazioni in questa integrazione: mantenere
-entrambi produce entità duplicate. Le entità di questa integrazione sono
-registrate correttamente e sopravvivono ai riavvii di Home Assistant.
-
 ## Note
 
 - Dati e disponibilità dipendono interamente dai servizi di terze parti.

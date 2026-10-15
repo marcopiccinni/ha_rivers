@@ -4,6 +4,14 @@ Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato segue [Keep a Changelog](https://keepachangelog.com/it/1.1.0/) e il
 progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
+## [0.1.2] - 2026-10-15
+
+### Changed
+
+- Rimossi dal repository pubblicato i file di sviluppo locale (istruzioni per
+  assistenti, cartella `.opencode/`); ampliato `.gitignore`.
+- Nessuna modifica funzionale alle entità.
+
 ## [0.1.1] - 2026-10-15
 
 ### Added
