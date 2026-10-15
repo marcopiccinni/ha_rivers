@@ -56,9 +56,11 @@ Header `User-Agent` inviato: alcuni percorsi fuori da `/o/api` rispondono 403.
    fetch metadati ARPAE (con `dati`) solo se più vecchi di `metadata_interval`
    (default 12000 s). Calcola `level` (ultimo punto), `trend` (Δ ultima ora),
    `alert` confrontando `level` con `soglie` (se una soglia è `None` → `nd`).
-3. **Entità** (`sensor.py`, `binary_sensor.py`): descrizioni per livello,
-   allerta, 3 soglie, trend, timestamp; extra creati solo se la variabile è in
-   `station.variables`.
+3. **Entità** (`sensor.py`, `binary_sensor.py`, `device_tracker.py`):
+   descrizioni per livello, allerta, 3 soglie, trend, timestamp; extra creati
+   solo se la variabile è in `station.variables`. Il `device_tracker` espone la
+   posizione fissa (`latitude`/`longitude` da ARPAE `geometry`) e appare
+   automaticamente sulla dashboard Mappa (tab *Dispositivi*).
 
 ## Default (in `const.py`)
 

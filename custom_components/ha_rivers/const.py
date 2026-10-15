@@ -7,7 +7,7 @@ from typing import Final
 
 DOMAIN: Final = "ha_rivers"
 
-VERSION: Final = "0.1.0"
+VERSION: Final = "0.1.1"
 
 # ARPAE - Agenzia regionale prevenzione, ambiente ed energia dell'Emilia-Romagna.
 # Eve-style REST API. Station metadata (thresholds, geodata, historical data).

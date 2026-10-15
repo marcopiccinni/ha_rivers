@@ -4,6 +4,14 @@ Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato segue [Keep a Changelog](https://keepachangelog.com/it/1.1.0/) e il
 progetto adotta il [Semantic Versioning](https://semver.org/lang/it/).
 
+## [0.1.1] - 2026-10-15
+
+### Added
+
+- Entità `device_tracker` per stazione: espone la posizione fissa della
+  stazione, che compare automaticamente sulla dashboard Mappa (tab
+  *Dispositivi*) senza dover elencare a mano i sensori.
+
 ## [0.1.0] - 2026-10-15
 
 ### Added

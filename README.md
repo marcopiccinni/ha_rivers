@@ -66,6 +66,7 @@ Per ogni stazione viene creato un **dispositivo** con le seguenti entità:
 | `sensor.*_last_measurement` | Timestamp dell'ultima misura di livello | — |
 | `sensor.*_last_metadata_update` | Timestamp dell'ultimo aggiornamento metadati | — |
 | `binary_sensor.*_station_active` | Stazione attiva secondo AllertaMeteoER | — |
+| `device_tracker.*` | Posizione fissa della stazione (per la mappa) | — |
 
 Entità **extra** (create solo se la stazione espone la variabile; alcune
 disabilitate di default perché rare):
@@ -79,6 +80,13 @@ disabilitate di default perché rare):
 | `sensor.*_pressure` | Pressione atmosferica | hPa |
 | `sensor.*_wind_speed` | Velocità vento | — |
 | `sensor.*_wind_direction` | Direzione vento | ° |
+
+## Mappa
+
+Ogni stazione espone un `device_tracker.*` con le coordinate, quindi compare
+**automaticamente** sulla dashboard **Mappa** predefinita (tab *Dispositivi*),
+senza configurazione aggiuntiva. In alternativa puoi usare le coordinate negli
+attributi di `sensor.*_level` dentro una card `type: map`.
 
 ## Opzioni
 
