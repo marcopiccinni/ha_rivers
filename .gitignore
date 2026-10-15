@@ -20,6 +20,9 @@ coverage.xml
 .idea/
 .DS_Store
 
+# Local-only files (kept out of the repository)
+.opencode/
+
 # Local secrets (never commit Home Assistant tokens)
 .env
 *.long_lived_token
