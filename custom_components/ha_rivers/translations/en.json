@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Fiumi Emilia-Romagna",
+        "description": "Search a hydrometric station by river basin, municipality or station code.\n\n**Disclaimer**: {disclaimer}",
+        "data": {
+          "query": "Search (river, municipality, code)"
+        }
+      },
+      "select": {
+        "title": "Select the station",
+        "description": "{count} station(s) found for \"{query}\". Pick one.",
+        "data": {
+          "station": "Station"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to ARPAE or AllertaMeteoER. Try again later.",
+      "no_stations_found": "No station found. Try a different search.",
+      "no_series_data": "This station currently exposes no level data. Pick another one."
+    },
+    "abort": {
+      "already_configured": "This station is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Fiumi options",
+        "description": "Refresh intervals, in seconds.",
+        "data": {
+          "scan_interval": "Level series refresh (s)",
+          "metadata_interval": "Thresholds / metadata refresh (s)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "level": { "name": "Level" },
+      "alert": { "name": "Alert status" },
+      "threshold_yellow": { "name": "Yellow threshold" },
+      "threshold_orange": { "name": "Orange threshold" },
+      "threshold_red": { "name": "Red threshold" },
+      "trend": { "name": "Level trend" },
+      "last_measurement": { "name": "Last measurement" },
+      "last_metadata_update": { "name": "Last metadata update" },
+      "discharge": { "name": "Discharge" },
+      "precipitation_1h": { "name": "Precipitation (1h)" },
+      "temperature": { "name": "Temperature" },
+      "humidity": { "name": "Humidity" },
+      "pressure": { "name": "Atmospheric pressure" },
+      "wind_speed": { "name": "Wind speed" },
+      "wind_direction": { "name": "Wind direction" }
+    },
+    "binary_sensor": {
+      "station_active": { "name": "Station active" }
+    }
+  }
+}

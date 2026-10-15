@@ -1,0 +1,11 @@
+{
+  "domain": "ha_rivers",
+  "name": "Fiumi Emilia-Romagna",
+  "codeowners": ["@marcopiccinni"],
+  "config_flow": true,
+  "documentation": "https://github.com/marcopiccinni/ha_rivers",
+  "issue_tracker": "https://github.com/marcopiccinni/ha_rivers/issues",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}
