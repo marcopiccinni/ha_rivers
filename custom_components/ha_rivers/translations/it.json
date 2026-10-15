@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Fiumi Emilia-Romagna",
+        "description": "Cerca una stazione idrometrica per bacino, comune o codice stazione.\n\n**Disclaimer**: {disclaimer}",
+        "data": {
+          "query": "Cerca (fiume, comune, codice)"
+        }
+      },
+      "select": {
+        "title": "Seleziona la stazione",
+        "description": "Trovate {count} stazioni per \"{query}\". Scegline una.",
+        "data": {
+          "station": "Stazione"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Connessione ad ARPAE o AllertaMeteoER non riuscita. Riprova piu' tardi.",
+      "no_stations_found": "Nessuna stazione trovata. Prova una ricerca diversa.",
+      "no_series_data": "Questa stazione non espone dati di livello al momento. Scegline un'altra."
+    },
+    "abort": {
+      "already_configured": "Questa stazione e' gia' configurata."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opzioni Fiumi",
+        "description": "Intervalli di aggiornamento, in secondi.",
+        "data": {
+          "scan_interval": "Aggiornamento serie livello (s)",
+          "metadata_interval": "Aggiornamento soglie / metadati (s)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "level": { "name": "Livello" },
+      "alert": { "name": "Stato allerta" },
+      "threshold_yellow": { "name": "Soglia gialla" },
+      "threshold_orange": { "name": "Soglia arancione" },
+      "threshold_red": { "name": "Soglia rossa" },
+      "trend": { "name": "Tendenza livello" },
+      "last_measurement": { "name": "Ultima misura" },
+      "last_metadata_update": { "name": "Ultimo aggiornamento metadati" },
+      "discharge": { "name": "Portata" },
+      "precipitation_1h": { "name": "Precipitazione (1h)" },
+      "temperature": { "name": "Temperatura" },
+      "humidity": { "name": "Umidita'" },
+      "pressure": { "name": "Pressione atmosferica" },
+      "wind_speed": { "name": "Velocita' vento" },
+      "wind_direction": { "name": "Direzione vento" }
+    },
+    "binary_sensor": {
+      "station_active": { "name": "Stazione attiva" }
+    }
+  }
+}
